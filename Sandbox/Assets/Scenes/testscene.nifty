@@ -75,7 +75,7 @@ Scene: Test
       Type Entity
       Name Cube
       Transform 
-        Position 1.596078 3.101895 -4.248889
+        Position 4.609675 3.147790 -4.232206
         Scale 1.000000 1.000000 1.000000
         Rotation 0.000000 -0.000000 0.000000
         HasShadows 1
@@ -129,7 +129,7 @@ Scene: Test
       Type Entity
       Name Sphere
       Transform 
-        Position -1.391838 0.971233 2.352578
+        Position -1.775715 3.482862 1.286099
         Scale 1.000000 1.000000 1.000000
         Rotation 0.000000 -0.000000 0.000000
         HasShadows 1
@@ -160,11 +160,19 @@ Scene: Test
       Type Entity
       Name PointLight
       Transform 
-        Position -7.339719 7.745336 -2.915661
+        Position -2.951606 5.728633 -2.341337
         Scale 1.000000 1.000000 1.000000
         Rotation 1.000000 1.000000 1.000000
         HasShadows 0
         ShaderID 40000001
+      Component 
+        Type 2
+        Name Physics Body
+        Enabled 1
+        Velocity 0.000000 0.000000 0.000000
+        Force 0.000000 0.000000 0.000000
+        Mass 1.000000
+      --C--
       Component 
         Type 3
         Name Collider
@@ -172,47 +180,6 @@ Scene: Test
         Position -7.339719 7.745336 -2.915661
         Scale 1.000000 1.000000 1.000000
       --C--
-      Component 
-        Type 7
-        Name Point Light
-        Enabled 1
-        Range 1.000000 1.000000 1.000000
-        Color 255.000000 255.000000 255.000000
-      --C--
-    --E--
-    Entity 20000005
-      Type Entity
-      Name Sun
-      Transform 
-        Position -8.542984 15.261905 0.413446
-        Scale 1.000000 1.000000 1.000000
-        Rotation 1.000000 1.000000 1.000000
-        HasShadows 0
-        ShaderID 40000001
-      Component 
-        Type 6
-        Name Directional Light
-        Enabled 1
-        Direction -17.000000 37.000000 -12.000000
-        Color 100.000000 100.000000 100.000000
-      --C--
-      Component 
-        Type 7
-        Name Point Light
-        Enabled 1
-        Range 1.000000 1.000000 1.000000
-        Color 255.000000 255.000000 255.000000
-      --C--
-    --E--
-    Entity 20000006
-      Type Entity
-      Name Character
-      Transform 
-        Position 0.000000 2.561728 0.000000
-        Scale 1.000000 0.999999 0.999999
-        Rotation 0.000000 -0.000000 0.000000
-        HasShadows 0
-        ShaderID 40000007
       Component 
         Type 7
         Name Point Light
